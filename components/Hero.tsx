@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container  px-6 relative z-10">
         <div className="max-w-3xl">
           <div className="inline-block py-1 mb-6">
             <span className="text-blue-200 text-[14px] font-semibold tracking-wider uppercase">Líderes en transporte pesado</span>
@@ -48,8 +48,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Stats overlay bottom desktop */}
-      <div className="hidden   lg:block absolute bottom-0 left-0 w-1/3 bg-blue-900/10 backdrop-blur-xl p-12 text-white">
-<div className="grid grid-cols-2 gap-8 md:pl-20 lg:pl-0">          <div>
+      <div className="hidden   lg:block absolute bottom-0 left-0 w-1/3 bg-blue-900/10 backdrop-blur-xl px-8 py-12 text-white">
+<div className="grid grid-cols-2 gap-4 ">          <div>
             <div className="text-2xl font-bold mb-1 text-blue-400">20+</div>
             <div className="text-sm uppercase tracking-widest text-blue-200 font-medium">Años de experiencia</div>
           </div>
