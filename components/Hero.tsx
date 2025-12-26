@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
       {/* Stats overlay bottom desktop */}
       <div className="hidden   lg:block absolute bottom-0 left-0 w-1/3 bg-blue-900/10 backdrop-blur-xl p-12 text-white">
-        <div className="grid grid-cols-2 gap-8 md:pl-20">
+        <div className="grid grid-cols-2 gap-8 pl-20 md:pl-0">
           <div>
             <div className="text-2xl font-bold mb-1 text-blue-400">20+</div>
             <div className="text-sm uppercase tracking-widest text-blue-200 font-medium">Años de experiencia</div>
