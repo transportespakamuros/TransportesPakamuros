@@ -1,13 +1,10 @@
-
 import React from 'react';
+import { motion } from "framer-motion";
 
 const fleetImages = [
-  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=800',
-  'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=800',
+  '/CargaPesada1.jpg',
+  '/CargaPesada2.jpg',
+  '/CargaPesada3.jpg',
 ];
 
 const Fleet: React.FC = () => {
@@ -35,7 +32,15 @@ const Fleet: React.FC = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {fleetImages.map((src, idx) => (
-            <div key={idx} className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer shadow-sm">
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: idx * 0.30 }}
+              //className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:bg-blue-100" 
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer shadow-sm"
+            >
               <img 
                 src={src} 
                 alt={`Trailer fleet ${idx + 1}`} 
@@ -44,7 +49,7 @@ const Fleet: React.FC = () => {
               <div className="absolute inset-0 bg-blue-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="text-white font-bold border-2 border-white px-6 py-2 rounded-lg">Ver Unidad</span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

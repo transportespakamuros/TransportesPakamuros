@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { CheckCircle2, Award, Users, MapPin, Activity } from 'lucide-react';
+import { motion } from 'framer-motion'
 
 const WhyUs: React.FC = () => {
   return (
@@ -24,7 +25,14 @@ const WhyUs: React.FC = () => {
                 { title: 'Profesionalismo garantizado', desc: 'Conductores certificados y capacitados constantemente.' },
                 { title: 'Cobertura nacional', desc: 'Llegamos a cualquier punto estratégico del país.' }
               ].map((feature, i) => (
-                <div key={i} className="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all">
+                <motion.div
+                  initial={{ opacity: 0, y: 80 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: i*0.5 }}
+                  key={i} 
+                  className="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10"
+                >
                   <div className="shrink-0 mt-1">
                     <CheckCircle2 className="text-blue-400" />
                   </div>
@@ -32,12 +40,18 @@ const WhyUs: React.FC = () => {
                     <h4 className="font-bold text-md mb-1">{feature.title}</h4>
                     <p className="text-blue-200">{feature.desc}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <motion.div
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.30 }}
+            className="grid grid-cols-2 gap-6"
+          >
             <div className="space-y-6 pt-0">
               <div className="bg-white text-blue-900 p-8 rounded-2xl shadow-2xl flex flex-col items-center text-center">
                 <Award size={40} className="mb-4 text-blue-600" />
@@ -62,7 +76,7 @@ const WhyUs: React.FC = () => {
                 <p className="text-sm font-bold uppercase tracking-wider text-slate-500">Monitoreo</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
