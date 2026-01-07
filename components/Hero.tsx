@@ -16,7 +16,6 @@ const Hero: React.FC = () => {
         }
       });
     }, 100);
-
     return () => clearInterval(interval); // limpieza si se desmonta
   }, []);
 
