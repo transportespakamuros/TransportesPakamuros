@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
             />
 
           </div>
-          <span className={`text-1xl font-extrabold tracking-tight ${scrolled ? 'text-blue-900' : 'text-white'
+          <span className={`text-1xl font-extrabold tracking-tight w-[180px] sm:w-[300px] ${scrolled ? 'text-blue-900' : 'text-white'
             }`}>
             TRANSPORTE <span className="text-blue-400">PAKAMUROS S.A.C</span>
           </span>
