@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const WhyUs: React.FC = () => {
   return (
-    <section className="py-24 bg-blue-900 text-white overflow-hidden relative">
+    <section className="py-24 bg-blue-900 text-white overflow-hidden overflow-x-hidden relative">
       {/* Decorative patterns */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-400/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
@@ -18,7 +18,7 @@ const WhyUs: React.FC = () => {
               Contamos con años de experiencia liderando el sector de transporte pesado, brindando soluciones que permiten a nuestros clientes centrarse en su negocio principal mientras nosotros cuidamos de su logística.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-6 overflow-x-hidden">
               {[
                 { title: 'Seguridad en cada traslado', desc: 'Protocolos estrictos y rastreo GPS 24/7.' },
                 { title: 'Flota moderna de tráilers', desc: 'Unidades con menos de 3 años de antigüedad.' },

@@ -77,7 +77,7 @@ const Services: React.FC = () => {
   const [selectServicio, setSelectServicio] = useState(null)
 
   return (
-    <section id="servicios" className="py-24 bg-slate-50">
+    <section id="servicios" className="py-24 bg-slate-50 overflow-x-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-16">
           <h2 className="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2">Lo que hacemos</h2>
@@ -85,7 +85,7 @@ const Services: React.FC = () => {
           <p className="text-md text-slate-600">Ofrecemos soluciones en el transporte de carga pesada, garantizando eficiencia y reducción de costos operativos.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-x-hidden">
           {services.map((item, idx) => (
             <motion.div
               key={idx}

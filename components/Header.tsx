@@ -11,9 +11,9 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <nav className={`w-[100%] fixed  z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-3' : 'bg-transparent py-5'
+    <nav className={`w-[100%] px-[30px] sm:px-[70px] fixed  z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg py-3' : 'bg-transparent py-5'
       }`}>
-      <div className="w-[100%]  px-[70px] flex justify-between items-center">
+      <div className="w-[100%] flex justify-between items-center">
         <a href="#inicio" className="flex items-center space-x-2">
           <div className={`p-2 rounded-lg ${scrolled ? 'bg-blue-600 text-white' : 'text-blue-600'}`}>
             <img
@@ -89,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden sm:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} className={scrolled ? 'text-blue-900' : 'text-white'} /> : <Menu size={28} className={scrolled ? 'text-blue-900' : 'text-white'} />}
@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ scrolled }) => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl animate-fade-in-down">
+        <div className="sm:hidden absolute top-full left-0 w-full bg-white shadow-xl animate-fade-in-down">
           <div className="flex flex-col p-6 space-y-4">
             {navLinksMovil.map((link) => (
               <a
