@@ -18,7 +18,7 @@ const WhyUs: React.FC = () => {
               Contamos con años de experiencia liderando el sector de transporte pesado, brindando soluciones que permiten a nuestros clientes centrarse en su negocio principal mientras nosotros cuidamos de su logística.
             </p>
 
-            <div className="space-y-6 overflow-x-hidden">
+            <div className="space-y-6 overflow-hidden">
               {[
                 { title: 'Seguridad en cada traslado', desc: 'Protocolos estrictos y rastreo GPS 24/7.' },
                 { title: 'Flota moderna de tráilers', desc: 'Unidades con menos de 3 años de antigüedad.' },
@@ -26,12 +26,12 @@ const WhyUs: React.FC = () => {
                 { title: 'Cobertura nacional', desc: 'Llegamos a cualquier punto estratégico del país.' }
               ].map((feature, i) => (
                 <motion.div
-                  initial={{ opacity: 0, y: 80 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.6, ease: "easeOut", delay: i*0.5 }}
                   key={i} 
-                  className="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10"
+                  className="flex gap-4 p-4 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 "
                 >
                   <div className="shrink-0 mt-1">
                     <CheckCircle2 className="text-blue-400" />
