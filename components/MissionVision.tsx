@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const MissionVision: React.FC = () => {
   return (
-    <section id="nosotros" className="py-24 bg-gradient-to-b from-white to-blue-50">
-      <div className="container mx-auto px-6">
+    <section id="nosotros" className="py-24 bg-gradient-to-b from-white to-blue-50 overflow-x-hidden">
+      <div className="container mx-auto px-6 overflow-x-hidden">
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Nuestro Propósito</h2>
@@ -66,7 +66,7 @@ const MissionVision: React.FC = () => {
               <h3 className="text-xl font-bold text-blue-900">Valores Corporativos</h3>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 overflow-x-hidden">
               <motion.div
                 initial={{ opacity: 0, x: 80 }}
                 whileInView={{ opacity: 1, x: 0 }}

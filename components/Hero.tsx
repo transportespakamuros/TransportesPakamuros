@@ -26,12 +26,11 @@ const Hero: React.FC = () => {
     >
       {/* Background */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-[80%_center] md:bg-center bg-cover"
         style={{
           backgroundImage:
             'url("https://res.cloudinary.com/dgdt5kcyq/image/upload/v1767585379/trailer2_nn7djt.jpg")',
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          
         }}
       >
         <div className="absolute inset-0 bg-blue-950/10 bg-gradient-to-r from-blue-900/50 mix-blend-multiply"></div>
