@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#contacto"
+              href="#cotizacion"
               className="relative overflow-visible bg-blue-600 hover:bg-blue-700 text-white md:px-8 md:py-4 px-3 py-2 rounded-lg font-bold md:text-md text-[16px] transition-all flex items-center justify-center group shadow-xl"
             >
               {/* Ping sutil */}

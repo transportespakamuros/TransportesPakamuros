@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Form Side */}
-          <div className="lg:w-2/3 p-12">
+          <div className="lg:w-2/3 p-12" id="cotizacion">
             <h3 className="text-2xl font-bold text-blue-900 mb-8">Solicitar una Cotización</h3>
             <form ref={form} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">

@@ -29,7 +29,7 @@ export default function ModalDetalleServicio({ isOpen, onClose, title, desc, ico
         <div className="flex justify-end">
           <a
           onClick={onclose}
-            href="#contacto"
+            href="#cotizacion"
             className="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700 transition-colors"
           >
             Cotizar servicio
