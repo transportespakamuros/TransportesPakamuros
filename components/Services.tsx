@@ -92,7 +92,7 @@ const Services: React.FC = () => {
               initial={{ opacity: 0, x: 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.6, delay: idx * 0.30 }}
+              transition={{ duration: 0.6, delay: idx * 0.15 }}
               className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:bg-blue-100"
             >
               <div className={`${item.color} w-16 h-16 rounded-xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform`}>
