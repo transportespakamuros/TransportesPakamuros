@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
 
-                <div className="mt-12 rounded-2xl overflow-hidden h-64 border border-slate-200 hover:shadow-lg transition-all duration-300">
+                <div className="mt-4 rounded-2xl overflow-hidden h-64 border border-slate-200 hover:shadow-lg transition-all duration-300">
                 {/* Google Maps Embed - Cajamarca */}
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d579.9851294739387!2d-77.02579624060242!3d-12.066944448451075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c896e6cda065%3A0x36be1dff41022f71!2sJir%C3%B3n%20Hip%C3%B3lito%20Unanue%20644%2C%20La%20Victoria%2015033!5e0!3m2!1ses!2spe!4v1769384212395!5m2!1ses!2spe"               width="100%"
@@ -92,6 +92,28 @@ const Contact: React.FC = () => {
                 ></iframe>
               </div>
 
+              <div className="flex gap-4 pt-4">
+                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                  <MapPin size={24} className="text-blue-400" />
+                </div>
+                <div>
+                  <h4 className="font-bold">Visítanos</h4>
+                  <p className="text-blue-200">Av. Abancay N° 644 - cercado de Lima</p>
+                </div>
+              </div>
+                <div className="mt-4 rounded-2xl overflow-hidden h-64 border border-slate-200 hover:shadow-lg transition-all duration-300">
+                {/* Google Maps Embed - Cajamarca */}
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.816304177461!2d-77.03269882610478!3d-12.056156742073295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b9221a2cf9%3A0x9bc8f64d36c420f!2sAv.%20Abancay%20965%2C%20Lima%2015001!5e0!3m2!1ses!2spe!4v1773717909932!5m2!1ses!2spe"               
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="hover:scale-[1.01] transition-all duration-700"
+                ></iframe>
+              </div>
             </div>
 
             <div className="mt-12 p-6 bg-blue-800/50 rounded-2xl border border-white/10">
@@ -235,7 +257,7 @@ const Contact: React.FC = () => {
                   Nuestras sedes
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 pb-10 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   
                   {/* SEDE 1 */}
                   <div className="flex flex-col gap-4">
